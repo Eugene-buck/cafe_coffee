@@ -180,3 +180,65 @@ footer {
     display: block;
   }
 }
+
+.stakeholders {
+  padding: 60px 20px;
+  background-color: #fdf7f0;
+  text-align: center;
+}
+
+.stakeholders h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #5a3825;
+}
+
+.stakeholder-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stakeholder-card {
+  background: #fff;
+  border: 1px solid #e0dcd5;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stakeholder-card h3 {
+  color: #3e281d;
+  margin-bottom: 10px;
+}
+
+.stakeholder-card p {
+  color: #6e4d3c;
+  font-size: 0.95rem;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stakeholder-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stakeholder-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
